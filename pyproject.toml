@@ -6,13 +6,33 @@ build-backend = "hatchling.build"
 name = "terminal-style"
 description = "Style your terminal-printed text"
 license = { text = "MIT" }
-requires-python = ">=3.10"
-authors = [
-  { name = "Colin Frisch", email = "colin.frisch@gmail.com" },
+requires-python = ">=3.7"
+keywords = [
+  "terminal",
+  "style",
+  "text",
+  "styling",
+  "formatting",
+  "colors",
+  "backgrounds",
+  "effects",
+]
+classifiers = [
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "Intended Audience :: System Administrators",
+  "Intended Audience :: End Users/Desktop",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Natural Language :: English",
 ]
 readme = "README.md"
 dependencies = [
-  "pyyaml"
+  "pyyaml",
 ]
 
 dynamic = ["version"]
@@ -28,22 +48,13 @@ dev = [
   "pytest-cov",
   "sphinx",
   "pytest-mock",
+  "mypy",
+  "build",
+  "twine",
 ]
 docs = [
   "sphinx",
   "ipython",
-  "pydata_sphinx_theme",
-  "seaborn",
-  "myst_nb",
-  "myst-parser",         # Markdown in Sphinx
-  "ipywidgets",
-  "matplotlib",
-  "jupyterlab",
-  "jupyterlab-code-formatter",
-  "jupyterlab_execute_time",
-  "jupyterlab-lsp",
-  "python-lsp-server",
-  "isort",
 ]
 
 [project.urls]
@@ -52,6 +63,7 @@ repository = "https://github.com/colinfrisch/terminal-style"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/terminal_style"]
+include = ["src/terminal_style/terminal_style_config.yml"]
 
 [tool.hatch.version]
 path = "src/terminal_style/__init__.py"

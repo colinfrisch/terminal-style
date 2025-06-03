@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="resources/banner.png" width="400" alt="logo">
+  <img src="https://github.com/colinfrisch/terminal-style/blob/main/resources/banner.png" width="400" alt="logo">
 </p>
 
 # Terminal Style - simple text styling for your terminal
