@@ -1,0 +1,95 @@
+# ANSI escape codes for colors and text effects
+
+# Reset code
+reset: \033[0m
+
+foreground_colors:
+  # Standard colors
+  black: \033[30m
+  red: \033[31m
+  green: \033[32m
+  yellow: \033[33m
+  blue: \033[34m
+  magenta: \033[35m
+  purple: \033[35m
+  cyan: \033[36m
+  white: \033[37m
+
+  # Bright/High intensity colors
+  bright_black: \033[90m
+  gray: \033[90m
+  grey: \033[90m
+  bright_red: \033[91m
+  bright_green: \033[92m
+  bright_yellow: \033[93m
+  bright_blue: \033[94m
+  bright_magenta: \033[95m
+  bright_purple: \033[95m
+  bright_cyan: \033[96m
+  bright_white: \033[97m
+
+  # Extended 256-color palette (popular colors)
+  orange: \033[38;5;208m
+  pink: \033[38;5;205m
+  light_pink: \033[38;5;218m
+  deep_pink: \033[38;5;198m
+  lime: \033[38;5;154m
+  gold: \033[38;5;220m
+  navy: \033[38;5;17m
+  maroon: \033[38;5;88m
+  olive: \033[38;5;58m
+  teal: \033[38;5;30m
+  silver: \033[38;5;246m
+  brown: \033[38;5;94m
+  indigo: \033[38;5;54m
+  violet: \033[38;5;177m
+  turquoise: \033[38;5;44m
+  coral: \033[38;5;203m
+  salmon: \033[38;5;209m
+  khaki: \033[38;5;222m
+  crimson: \033[38;5;160m
+  forest_green: \033[38;5;22m
+  sky_blue: \033[38;5;117m
+  lavender: \033[38;5;183m
+  peach: \033[38;5;216m
+  mint: \033[38;5;121m
+
+# Background colors
+background_colors:
+  # Standard background colors
+  black: \033[40m
+  red: \033[41m
+  green: \033[42m
+  yellow: \033[43m
+  blue: \033[44m
+  magenta: \033[45m
+  purple: \033[45m
+  cyan: \033[46m
+  white: \033[47m
+
+  # Bright background colors
+  bright_black: \033[100m
+  gray: \033[100m
+  grey: \033[100m
+  bright_red: \033[101m
+  bright_green: \033[102m
+  bright_yellow: \033[103m
+  bright_blue: \033[104m
+  bright_magenta: \033[105m
+  bright_purple: \033[105m
+  bright_cyan: \033[106m
+  bright_white: \033[107m
+
+# Text effects
+text_effects:
+  bold: \033[1m
+  dim: \033[2m
+  italic: \033[3m
+  underline: \033[4m
+  blink: \033[5m
+  reverse: \033[7m
+  hidden: \033[8m
+  strikethrough: \033[9m
+  strike: \033[9m
+  double_underline: \033[21m
+  overline: \033[53m
