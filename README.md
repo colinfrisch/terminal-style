@@ -4,18 +4,14 @@
 
 # Terminal Style - simple text styling for your terminal
 
-| Feature | Status |
-|---------|--------|
-| Package | [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/) [![PyPI Downloads](https://img.shields.io/pypi/dm/terminal-style.svg)](https://pypi.org/project/terminal-style/) |
-| License | [![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE) |
-| Meta | [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) [![Ruff](https://img.shields.io/badge/Ruff-v0.0.292-purple.svg)](https://github.com/charliermarsh/ruff) |
+| | |
+| --- | --- |
+| Package | [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/) [![PyPI](https://img.shields.io/pypi/v/terminal-style.svg)](https://pypi.org/project/terminal-style) [![PyPI - License](https://img.shields.io/pypi/l/terminal-style)](https://pypi.org/project/terminal-style/) |
+| Meta | [![linting - Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff) [![code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) |
 
-Styling text in a terminal is a pain and weirdly, there are no great libraries for this. So I made a very simple lightweight Python library for styling terminal text with colors, backgrounds, and text effects. No complex features, no hassle.
+Styling text in a terminal is a pain and weirdly, there are no libraries that are both simple to use and multi-task for this. So I made a very simple lightweight Python library for styling terminal text with colors, backgrounds, and text effects. No complex features, no hassle.
 
-**install using pip:**
-```bash
-pip install terminal-style
-```
+**install using pip:** `pip install -U terminal-style`
 
 ## Using terminal-style : 3 tools that will make your life easier
 
@@ -39,14 +35,14 @@ print(
 <img src="https://raw.githubusercontent.com/colinfrisch/terminal-style/main/resources/style_demo.png" width="150" alt="logo">
 
 
-- **`spinner`** is a function that will show a spinner in the terminal :
+- **`spinner`** is a function that will show a spinner in the terminal : the spinner will stop automatically when a next line is printed in the terminal. It runs in parallel, so don't worry about blocking the main thread.
 ```python
-spinner("Loading...", color="cyan", bold=True, type="dots")
+spinner("Processing...", color="cyan", bold=True, type="dots")
 ```
 <img src="https://raw.githubusercontent.com/colinfrisch/terminal-style/main/resources/spinner_demo.png" width="150" alt="logo">
 
 
-## Available Colors
+## Available Styles
 
 | color/bg_color | Spinner | Text Effect |
 |-------|---------|-------------|
@@ -59,10 +55,10 @@ spinner("Loading...", color="cyan", bold=True, type="dots")
 | cyan ![](https://placehold.co/15x15/00FFFF/00FFFF.png) | moon `🌑` | hidden |
 | white ![](https://placehold.co/15x15/FFFFFF/FFFFFF.png) | weather `☀️` | strikethrough |
 | bright_black/gray/grey ![](https://placehold.co/15x15/808080/808080.png) | hearts `💛` | strike |
-| bright_red ![](https://placehold.co/15x15/FF6666/FF6666.png) | runner `🚶` | double_underline |
+| bright_red ![](https://placehold.co/15x15/FF6666/FF6666.png) | growHorizontal `▏`  | double_underline |
 | bright_green ![](https://placehold.co/15x15/66FF66/66FF66.png) | modern `▰▱▱▱▱▱▱` | overline |
 | bright_yellow ![](https://placehold.co/15x15/FFFF66/FFFF66.png) | growVertical `▁` | |
-| bright_blue ![](https://placehold.co/15x15/6666FF/6666FF.png) | growHorizontal `▏` | |
+| bright_blue ![](https://placehold.co/15x15/6666FF/6666FF.png) | | |
 | bright_magenta ![](https://placehold.co/15x15/FF66FF/FF66FF.png) | | |
 | bright_purple ![](https://placehold.co/15x15/FF66FF/FF66FF.png) | | |
 | bright_cyan ![](https://placehold.co/15x15/66FFFF/66FFFF.png) | | |
@@ -127,7 +123,7 @@ python run_tests.py
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-**Author** : Colin Frisch - [colin.frisch@gmail.com](mailto:colin.frisch@gmail.com)
+**Author** : Colin Frisch - [linkedin.com/colinfrisch](https://www.linkedin.com/in/colinfrisch/)
 
 ---
 
