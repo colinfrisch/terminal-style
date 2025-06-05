@@ -62,11 +62,11 @@ homepage = "https://github.com/colinfrisch/terminal-style"
 repository = "https://github.com/colinfrisch/terminal-style"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/terminal_style"]
-include = ["src/terminal_style/terminal_style_config.yml"]
+packages = ["terminal_style"]
+include = ["terminal_style/terminal_style_config.yml"]
 
 [tool.hatch.version]
-path = "src/terminal_style/__init__.py"
+path = "terminal_style/__init__.py"
 
 [tool.pytest.ini_options]
 addopts = "-ra -q"
