@@ -16,12 +16,13 @@ Styling text in a terminal is a pain and weirdly, there are no libraries that ar
 ## Using terminal-style : 3 tools that will make your life easier
 
 
-- **`sprint`** is a wrapper around `print` that allows you to style the text :
+- **`sprint`** acts like `print` but allows you to style the text :
 ```python
 sprint("Hello, world!", color="red", bold=True)
 ```
 <img src="https://raw.githubusercontent.com/colinfrisch/terminal-style/main/resources/sprint_demo.png" width="200" alt="logo">
 
+<br/><br/>
 
 - **`style`** is a function that returns a styled string formatted terminal use. Can be used in regular print statements :
 ```python
@@ -34,12 +35,16 @@ print(
 ```
 <img src="https://raw.githubusercontent.com/colinfrisch/terminal-style/main/resources/style_demo.png" width="150" alt="logo">
 
+<br/><br/>
+
 
 - **`spinner`** is a function that will show a spinner in the terminal : the spinner will stop automatically when a next line is printed in the terminal. It runs in parallel, so don't worry about blocking the main thread.
 ```python
 spinner("Processing...", color="cyan", bold=True, type="dots")
 ```
 <img src="https://raw.githubusercontent.com/colinfrisch/terminal-style/main/resources/spinner_demo.png" width="150" alt="logo">
+
+<br/><br/>
 
 
 ## Available Styles

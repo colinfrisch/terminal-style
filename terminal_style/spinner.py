@@ -3,8 +3,8 @@ import builtins
 import threading
 import time
 
-from src.terminal_style.terminal_style import style
-from src.terminal_style.terminal_style_config import TerminalStyleConfig
+from terminal_style.terminal_style import style
+from terminal_style.terminal_style_config import TerminalStyleConfig
 
 # Global spinner state
 _current_spinner = None

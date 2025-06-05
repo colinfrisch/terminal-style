@@ -7,10 +7,11 @@ styled strings.
 
 import datetime
 
-from .terminal_style import list_available_styles, sprint, style
+from .spinner import spinner
+from .terminal_style import sprint, style
 
 __all__ = [
-    "list_available_styles",
+    "spinner",
     "sprint",
     "style",
 ]

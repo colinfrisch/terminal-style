@@ -5,7 +5,7 @@ to terminal output. It includes functions for both printing styled text and retu
 styled strings.
 """
 
-from src.terminal_style.terminal_style_config import TerminalStyleConfig
+from terminal_style.terminal_style_config import TerminalStyleConfig
 
 # Initialize configuration
 _config = TerminalStyleConfig()
@@ -109,6 +109,6 @@ def list_available_styles():
 
 
 if __name__ == "__main__":
-    # CL to execute : python -m src.terminal_style.terminal_style
+    # CL to execute : python -m terminal_style.terminal_style
     list_available_styles()
     sprint("Hello", color="red", bg_color="orange", bold=True)
