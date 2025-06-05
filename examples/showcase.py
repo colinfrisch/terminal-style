@@ -26,13 +26,13 @@ def main():
     # ===========================================
     # 1. STYLE FUNCTION DEMO
     # ===========================================
-    print("\n📝 1. STYLE FUNCTION - Returns styled strings")
+    print("\n1. STYLE FUNCTION - Returns styled strings")
     print("-" * 45)
 
     # Basic color styling
     hello_text = style("Hello, World!", color="cyan", bold=True)
-    warning_text = style("⚠️  WARNING", color="yellow", bg_color="red", bold=True)
-    success_text = style("✅ SUCCESS", color="bright_green", underline=True)
+    warning_text = style("WARNING", color="yellow", bg_color="red", bold=True)
+    success_text = style("SUCCESS", color="bright_green", underline=True)
 
     print(f"Basic styling: {hello_text}")
     print(f"Warning style: {warning_text}")
@@ -50,7 +50,7 @@ def main():
     # ===========================================
     # 2. SPRINT FUNCTION DEMO
     # ===========================================
-    print("\n🖨️  2. SPRINT FUNCTION - Direct styled printing")
+    print("\n 2. SPRINT FUNCTION - Direct styled printing")
     print("-" * 48)
 
     sprint("This is a basic colored message", color="blue")
@@ -76,64 +76,57 @@ def main():
     # ===========================================
     # 3. SPINNER FUNCTION DEMO
     # ===========================================
-    print("\n⏳ 3. SPINNER FUNCTION - Animated loading indicators")
+    print("\n3. SPINNER FUNCTION - Animated loading indicators")
     print("-" * 52)
 
     # Basic spinner
     print("Basic line spinner:")
     spinner("Loading basic data...", color="cyan")
-    time.sleep(2)
-    print("✅ Basic data loaded!")
+    time.sleep(1.5)
 
     # Dots spinner with styling
     print("\nDots spinner with styling:")
     spinner("Processing files...", color="yellow", bold=True, type="dots")
-    time.sleep(2.5)
-    print("✅ Files processed successfully!")
+    time.sleep(1.5)
 
     # Bouncing ball spinner
     print("\nBouncing ball animation:")
     spinner("Analyzing data...", color="green", type="bouncingBall")
-    time.sleep(2)
-    print("✅ Analysis complete!")
+    time.sleep(1.5)
 
     # Earth spinner (emoji)
     print("\nEarth spinner:")
     spinner("Syncing with servers...", color="blue", bold=True, type="earth")
-    time.sleep(2)
-    print("🌍 Sync complete!")
+    time.sleep(1.5)
 
     # Modern progress bar style
     print("\nModern progress bar:")
     spinner("Downloading updates...", color="purple", type="modern")
-    time.sleep(3)
-    print("📦 Updates downloaded!")
+    time.sleep(1.5)
 
     # Hearts spinner with background
     print("\nHearts spinner with background:")
     spinner("Spreading love...", color="red", bg_color="white", type="hearts")
-    time.sleep(2)
-    print("💖 Love spread successfully!")
+    time.sleep(1.5)
 
-    # ===========================================
-    # BONUS: COMBINING ALL FUNCTIONS
-    # ===========================================
-    print("\n🎯 BONUS: Combining all functions")
+    # COMBINING ALL FUNCTIONS ------------------------------------------------------------
+
+    print("\nCombining all functions")
     print("-" * 35)
 
     # Create styled messages
-    start_msg = style("🚀 Starting final demo...", color="bright_cyan", bold=True)
+    start_msg = style("Starting final demo...", color="bright_cyan", bold=True)
     print(start_msg)
 
     # Use spinner for "work"
     spinner(
         "Running complex calculations...", color="orange", bold=True, type="growVertical"
     )
-    time.sleep(2.5)
+    time.sleep(1.5)
 
     # Print results with sprint
     sprint(
-        "🎉 Demo completed successfully!",
+        "Demo completed successfully!",
         color="bright_green",
         bold=True,
         bg_color="navy",
@@ -142,7 +135,7 @@ def main():
 
     print("\n" + "=" * 60)
     sprint(
-        "📚 Learn more: https://github.com/your-repo/terminal-style",
+        "Learn more: https://github.com/colinfrisch/terminal-style",
         color="cyan",
         underline=True,
     )
@@ -150,10 +143,11 @@ def main():
 
 
 if __name__ == "__main__":
+    # CL to execute : python -m examples.showcase
     try:
         main()
     except KeyboardInterrupt:
-        print("\n\n👋 Showcase interrupted. Goodbye!")
+        print("\n\nShowcase interrupted.")
     except Exception as e:
-        error_msg = style(f"❌ Error: {e}", color="red", bold=True)
+        error_msg = style(f"Error: {e}", color="red", bold=True)
         print(f"\n{error_msg}")
