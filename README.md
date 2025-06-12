@@ -6,7 +6,7 @@
 
 | | |
 | --- | --- |
-| Package | [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/) [![PyPI](https://img.shields.io/pypi/v/terminal-style.svg)](https://pypi.org/project/terminal-style) [![PyPI Downloads](https://static.pepy.tech/badge/terminal-style)](https://pepy.tech/projects/terminal-style) [![PyPI - License](https://img.shields.io/pypi/l/terminal-style)](https://pypi.org/project/terminal-style/) |
+| Package | [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/) [![PyPI](https://img.shields.io/pypi/v/terminal-style.svg)](https://pypi.org/project/terminal-style) [![PyPI - Downloads](https://img.shields.io/pypi/dw/terminal-style)](https://pypistats.org/packages/terminal-style) [![PyPI - License](https://img.shields.io/pypi/l/terminal-style)](https://pypi.org/project/terminal-style/) |
 | Meta | [![linting - Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff) [![code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) |
 
 Styling text in a terminal is a pain and weirdly, there are no libraries that are both simple to use and multi-task for this. So I made a very simple lightweight Python library for styling terminal text with colors, backgrounds, and text effects. No complex features, no hassle.
